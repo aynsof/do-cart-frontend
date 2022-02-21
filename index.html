@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Shopping Cart</h1>
+    
+      <div class="row">
+        <div class="column">
+          <form>
+            <p>User ID:</p>
+            <input type="text" value="A" id="userid">
+          </form>
+          <button onclick="renderCart()">Get Cart</button>
+        </div>
+        <div class="column">
+          <form>
+            <input type="text" value="bananas" id="item">
+            <input type="number" value="1" id="number">
+          </form>
+          <button onclick="renderItemChange(1)">Add Item</button>
+          <button onclick="renderItemChange(0)">Remove Item</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="cart"></div>
+      </div>
+  
+    </main>
+  </body>
+
+</html>
+
